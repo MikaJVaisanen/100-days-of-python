@@ -5,5 +5,6 @@ people = int(input("How many people to split the bill? "))
 
 tip_percentage = 1 + (tip / 100)
 bill_per_person = (bill / people) * tip_percentage
+final_amount = round(bill_per_person, 2)
 
-print("Each person should pay: $" + str(round(bill_per_person, 2)))
+print(f"Each person should pay: ${final_amount}")
